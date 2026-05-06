@@ -952,14 +952,23 @@ Mohon informasi lebih lanjut. Terima kasih.`;
             {/* Price history */}
             <motion.div
               variants={fadeUp}
-              className="flex flex-wrap items-center justify-center gap-3 mb-8 text-sm"
+              className="flex flex-wrap items-center justify-center gap-4 mb-8 text-sm"
             >
-              <span className="line-through text-white/25 font-mono">Rp8,5M</span>
-              <ArrowRight className="w-3 h-3 text-white/30" />
-              <span className="line-through text-white/35 font-mono">Rp7,5M</span>
-              <ArrowRight className="w-3 h-3 text-white/30" />
-              <span className="text-red-400 font-black text-xl font-mono">Rp6,5M ✓</span>
-              <span className="text-red-300/60 text-xs ml-1">(NEGO)</span>
+              <div className="flex flex-col items-center">
+                <span className="text-white/35 text-[10px] uppercase tracking-wider mb-1">Harga Awal</span>
+                <span className="line-through text-white/25 font-mono">Rp8,5 Miliar</span>
+              </div>
+              <ArrowRight className="w-3 h-3 text-white/30 self-center" />
+              <div className="flex flex-col items-center">
+                <span className="text-yellow-400 text-[10px] uppercase tracking-wider mb-1">Turun 1×</span>
+                <span className="line-through text-white/35 font-mono">Rp7,5 Miliar</span>
+              </div>
+              <ArrowRight className="w-3 h-3 text-white/30 self-center" />
+              <div className="flex flex-col items-center">
+                <span className="text-red-400 text-[10px] uppercase tracking-wider mb-1">Turun 3× <span className="text-red-300">HARGA SAAT INI</span></span>
+                <span className="text-red-400 font-black text-xl font-mono">Rp6,5 Miliar ✓</span>
+                <span className="text-red-300/70 text-[10px]">(NEGO SAMPAI DEAL)</span>
+              </div>
             </motion.div>
 
             <motion.p
