@@ -1046,7 +1046,7 @@ Mohon informasi lebih lanjut. Terima kasih.`;
       </section>
 
       {/* ─── LEAD FORM ─── */}
-      <section ref={formRef} className="py-20 md:py-28 bg-[#0C0C0C] scroll-mt-20">
+      <section ref={formRef} className="py-20 md:py-28 bg-[#0C0C0C] scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid lg:grid-cols-5 gap-12 items-start">
             {/* Left info */}
