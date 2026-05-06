@@ -1,0 +1,375 @@
+{
+  "landingPage": {
+    "meta": {
+      "title": "Kost Eksklusif 16 Kamar + Ruang Usaha Dekat Ambarukmo Plaza Yogyakarta | Investasi Menguntungkan Rp6,5M",
+      "description": "Jual kost eksklusif 16 kamar full furnished di Sorowajan Baru Yogyakarta. Lokasi strategis dekat Ambarukmo Plaza. Siap operasi, dual income stream. Harga Rp6,5M nego. Survey sekarang!",
+      "keywords": [
+        "investasi kost yogyakarta",
+        "kost eksklusif dekat ambarukmo plaza",
+        "jual kost 16 kamar sorowajan",
+        "properti komersial ready income yogyakarta",
+        "investasi properti ROI tinggi jogja",
+        "kost premium yogyakarta",
+        "bisnis kost strategis"
+      ],
+      "author": "Salam Bumi Property",
+      "robots": "index, follow",
+      "canonical": "https://salambumiproperty.com/kost-eksklusif-16-kamar-ambarukmo"
+    },
+    "design": {
+      "theme": "modern-professional",
+      "primaryColor": "#DC2626",
+      "secondaryColor": "#16A34A",
+      "accentColor": "#F59E0B",
+      "fontFamily": "Inter, sans-serif",
+      "layout": "single-page-scroll",
+      "responsive": true,
+      "animations": "fade-in-up, hover-effects, smooth-scroll"
+    },
+    "sections": [
+      {
+        "id": "hero",
+        "type": "hero-banner",
+        "content": {
+          "badge": "🔥 OWNER BURUANN - HARGA TURUN 3x!",
+          "headline": "Investasi Kost Eksklusif 16 Kamar + Ruang Usaha Aktif",
+          "subheadline": "Lokasi Premium Dekat Ambarukmo Plaza, Yogyakarta - Mesin Penghasil Cashflow Ganda Siap Operasi",
+          "price": {
+            "label": "Harga Investasi",
+            "amount": "Rp6,5 Miliar",
+            "note": "(NEGO SAMPAI DEAL)",
+            "originalPrice": "Rp8,5 Miliar"
+          },
+          "ctaButtons": [
+            {
+              "text": "📞 Hubungi via WhatsApp",
+              "type": "primary",
+              "action": "whatsapp",
+              "icon": "whatsapp"
+            },
+            {
+              "text": "📅 Jadwalkan Survey Lokasi",
+              "type": "secondary",
+              "action": "scroll-to-form",
+              "icon": "calendar"
+            }
+          ],
+          "trustBadges": [
+            "✓ Lokasi Strategis",
+            "✓ Siap Operasi",
+            "✓ Dual Income Stream",
+            "✓ Legalitas Lengkap"
+          ]
+        }
+      },
+      {
+        "id": "keunggulan",
+        "type": "features-grid",
+        "title": "Mengapa Properti Ini Investasi Cerdas?",
+        "features": [
+          {
+            "icon": "location",
+            "title": "Lokasi Gold Spot",
+            "description": "Tepi jalan aspal lebar, dikelilingi café, hotel, dan pusat bisnis. Hanya beberapa menit dari Plaza Ambarrukmo."
+          },
+          {
+            "icon": "cash",
+            "title": "Dual Income Stream",
+            "description": "Pendapatan dari 16 kamar kost premium + cashflow usaha komersial/resto yang sedang berjalan."
+          },
+          {
+            "icon": "ready",
+            "title": "Siap Operasi Penuh",
+            "description": "16 kamar full furnished dengan AC, TV LED, water heater. Tidak perlu investasi tambahan."
+          },
+          {
+            "icon": "growth",
+            "title": "Prospect Apresiasi Tinggi",
+            "description": "Kawasan Sorowajan Baru berkembang pesat. Estimasi kenaikan nilai properti 8-12% per tahun."
+          }
+        ]
+      },
+      {
+        "id": "spesifikasi",
+        "type": "specifications",
+        "title": "Spesifikasi Properti",
+        "items": [
+          {
+            "label": "Luas Tanah",
+            "value": "512 m²",
+            "icon": "land"
+          },
+          {
+            "label": "Luas Bangunan",
+            "value": "±500 m²",
+            "icon": "building"
+          },
+          {
+            "label": "Jumlah Kamar",
+            "value": "16 Kamar Premium",
+            "icon": "bed"
+          },
+          {
+            "label": "Ruang Usaha",
+            "value": "Tersedia & Aktif",
+            "icon": "shop"
+          }
+        ],
+        "facilities": [
+          "AC di setiap kamar",
+          "TV LED",
+          "Water Heater",
+          "Kamar Mandi Dalam",
+          "Furnitur Berkualitas",
+          "Listrik Token Per Kamar",
+          "Area Parkir Luas",
+          "Ruang Usaha/Resto"
+        ]
+      },
+      {
+        "id": "pendapatan",
+        "type": "income-potential",
+        "title": "Potensi Pendapatan & ROI",
+        "highlight": "Estimasi Gross Yield: 3.5% - 4.5% per tahun (belum termasuk capital gain)",
+        "incomeStreams": [
+          {
+            "type": "Sewa Bulanan",
+            "range": "Rp1.300.000 - Rp1.500.000/kamar",
+            "monthlyEstimate": "Rp20,8 - 24 Juta",
+            "icon": "monthly"
+          },
+          {
+            "type": "Sewa Harian",
+            "range": "Mulai Rp150.000/malam",
+            "monthlyEstimate": "Flexible - Potensi Lebih Tinggi",
+            "icon": "daily"
+          },
+          {
+            "type": "Pendapatan Resto",
+            "range": "Cashflow Usaha Komersial",
+            "monthlyEstimate": "Additional Income",
+            "icon": "restaurant"
+          }
+        ],
+        "benefits": [
+          "Demand tinggi dari mahasiswa, pekerja, & wisatawan",
+          "Manajemen mudah dengan sistem token",
+          "Aset produktif yang bisa 'membayar dirinya sendiri'",
+          "Kawasan koridor Sorowajan–Umbulharjo terus berkembang"
+        ]
+      },
+      {
+        "id": "lokasi",
+        "type": "location",
+        "title": "Lokasi Sangat Strategis",
+        "address": "Sorowajan Baru, Yogyakarta (Dekat Ambarukmo Plaza)",
+        "nearby": [
+          "Plaza Ambarrukmo - 5 menit",
+          "Kawasan Bisnis & Hotel",
+          "Café & Restoran",
+          "Akses Jalan Lebar & Lancar"
+        ],
+        "mapEmbed": true
+      },
+      {
+        "id": "urgency",
+        "type": "urgency-banner",
+        "content": {
+          "title": "⚡ PENAWARAN TERBATAS - OWNER SANGAT SERIOUS!",
+          "message": "Harga telah disesuaikan 3x lipat: Rp8,5M → Rp7,5M → Rp6,5M. Owner butuh dana cepat. Kesempatan emas untuk investor yang decisive!",
+          "countdown": true,
+          "scarcity": "Hanya untuk buyer yang serius dan siap deal cepat"
+        }
+      },
+      {
+        "id": "form-section",
+        "type": "lead-form",
+        "title": "Jadwalkan Survey Lokasi & Dapatkan Analisis ROI Gratis",
+        "subtitle": "Isi form di bawah ini, tim kami akan segera menghubungi Anda untuk konfirmasi jadwal survey dan konsultasi investasi",
+        "form": {
+          "id": "property-inquiry-form",
+          "action": "whatsapp-redirect",
+          "method": "POST",
+          "whatsappNumber": "6281391278889",
+          "fields": [
+            {
+              "name": "nama",
+              "label": "Nama Lengkap *",
+              "type": "text",
+              "placeholder": "Masukkan nama lengkap Anda",
+              "required": true,
+              "validation": "minLength:2"
+            },
+            {
+              "name": "asal_daerah",
+              "label": "Asal Daerah/Kota *",
+              "type": "text",
+              "placeholder": "Contoh: Jakarta, Surabaya, Bandung",
+              "required": true,
+              "validation": "minLength:2"
+            },
+            {
+              "name": "no_telepon",
+              "label": "No. Telepon/WhatsApp Aktif *",
+              "type": "tel",
+              "placeholder": "Contoh: 081234567890",
+              "required": true,
+              "validation": "phone",
+              "pattern": "^[0-9]{10,13}$"
+            },
+            {
+              "name": "rencana_pembayaran",
+              "label": "Rencana Pembayaran *",
+              "type": "select",
+              "required": true,
+              "options": [
+                {
+                  "value": "",
+                  "label": "-- Pilih Rencana Pembayaran --",
+                  "disabled": true
+                },
+                {
+                  "value": "Cash Keras",
+                  "label": "Cash Keras (Lunas)"
+                },
+                {
+                  "value": "Cash Tempo/Bertahap",
+                  "label": "Cash Tempo/Bertahap"
+                },
+                {
+                  "value": "KPR Bank",
+                  "label": "KPR Bank"
+                }
+              ]
+            },
+            {
+              "name": "rencana_survey",
+              "label": "Kapan Rencana Survey Lokasi? *",
+              "type": "date",
+              "required": true,
+              "min": "today",
+              "format": "YYYY-MM-DD"
+            },
+            {
+              "name": "pesan_tambahan",
+              "label": "Pesan atau Pertanyaan (Opsional)",
+              "type": "textarea",
+              "placeholder": "Ada pertanyaan khusus? Tulis di sini...",
+              "required": false,
+              "rows": 3
+            }
+          ],
+          "submitButton": {
+            "text": "📲 Kirim & Hubungi via WhatsApp",
+            "type": "submit",
+            "style": "primary-large",
+            "icon": "whatsapp"
+          },
+          "whatsappMessageTemplate": "Halo Salam Bumi Property,%0A%0ASaya tertarik dengan properti Kost Eksklusif 16 Kamar dekat Ambarukmo Plaza.%0A%0AData Saya:%0ANama: {nama}%0AAsal: {asal_daerah}%0ANo. HP: {no_telepon}%0APembayaran: {rencana_pembayaran}%0ARencana Survey: {rencana_survey}%0A%0APesan: {pesan_tambahan}%0A%0AMohon informasi lebih lanjut. Terima kasih.",
+          "successMessage": "Terima kasih! Anda akan diarahkan ke WhatsApp...",
+          "errorMessage": "Mohon lengkapi semua field yang wajib diisi."
+        }
+      },
+      {
+        "id": "about",
+        "type": "company-info",
+        "title": "Salam Bumi Property",
+        "description": "Spesialis Investasi Properti & Manajemen Aset Yogyakarta",
+        "services": [
+          "Jual/Beli/Titip Jual: Tanah, Rumah, Kost, Hotel, Komersial",
+          "Jasa Bangun, Desain Interior & Eksterior",
+          "Manajemen Aset Properti Profesional"
+        ],
+        "trustPoints": [
+          "Legalitas Terjamin",
+          "Data Pasar Akurat",
+          "Nego Sampai Deal",
+          "After Sales Service"
+        ]
+      },
+      {
+        "id": "footer",
+        "type": "footer",
+        "content": {
+          "copyright": "© 2024 Salam Bumi Property. All rights reserved.",
+          "contact": {
+            "whatsapp": "0813-9127-8889",
+            "email": "info@salambumiproperty.com",
+            "address": "Yogyakarta, Indonesia"
+          },
+          "socialLinks": [
+            {
+              "platform": "WhatsApp",
+              "url": "https://wa.me/6281391278889",
+              "icon": "whatsapp"
+            }
+          ]
+        }
+      }
+    ],
+    "floatingElements": {
+      "whatsappButton": {
+        "enabled": true,
+        "number": "6281391278889",
+        "message": "Halo, saya tertarik dengan Kost Eksklusif 16 Kamar dekat Ambarukmo Plaza. Mohon informasi lebih lanjut.",
+        "position": "bottom-right",
+        "text": "Chat WhatsApp"
+      },
+      "stickyHeader": {
+        "enabled": true,
+        "showOnScroll": 300,
+        "ctaButton": {
+          "text": "📞 0813-9127-8889",
+          "action": "whatsapp"
+        }
+      }
+    },
+    "seo": {
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@type": "RealEstateListing",
+        "name": "Kost Eksklusif 16 Kamar + Ruang Usaha Dekat Ambarukmo Plaza",
+        "description": "Investasi kost eksklusif 16 kamar di Sorowajan Baru Yogyakarta. Lokasi strategis, siap operasi, dual income stream.",
+        "price": {
+          "@type": "PriceSpecification",
+          "price": "6500000000",
+          "priceCurrency": "IDR"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Yogyakarta",
+          "addressRegion": "DI Yogyakarta",
+          "streetAddress": "Sorowajan Baru"
+        },
+        "numberOfRooms": "16",
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": "500",
+          "unitCode": "MTK"
+        }
+      },
+      "openGraph": {
+        "og:title": "Kost Eksklusif 16 Kamar + Ruang Usaha - Rp6,5M | Salam Bumi Property",
+        "og:description": "Investasi menguntungkan di Yogyakarta. Lokasi premium dekat Ambarukmo Plaza. Siap operasi, cashflow stabil.",
+        "og:type": "website",
+        "og:image": "https://salambumiproperty.com/images/kost-16-kamar-og.jpg"
+      }
+    },
+    "performance": {
+      "lazyLoading": true,
+      "imageOptimization": true,
+      "minifyCSS": true,
+      "minifyJS": true,
+      "cacheEnabled": true
+    },
+    "analytics": {
+      "googleAnalytics": true,
+      "facebookPixel": true,
+      "conversionTracking": {
+        "formSubmit": true,
+        "whatsappClick": true,
+        "phoneClick": true
+      }
+    }
+  }
+}
