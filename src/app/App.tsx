@@ -130,8 +130,20 @@ export default function App() {
     return () => clearInterval(id);
   }, []);
 
-  const scrollToForm = () =>
-    formRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const scrollToForm = () => {
+    const headerHeight = 80; // Fixed header height
+    const target = formRef.current || document.getElementById('lead-form');
+    if (target) {
+      const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: elementPosition - headerHeight,
+        behavior: 'smooth'
+      });
+    } else {
+      // Fallback: estimate form position
+      window.scrollTo({ top: 1200, behavior: 'smooth' });
+    }
+  };
 
   const validate = () => {
     const e: Record<string, string> = {};
@@ -291,8 +303,8 @@ Mohon informasi lebih lanjut. Terima kasih.`;
                 </p>
                 <div className="flex items-center gap-3 mt-2">
                   <div className="flex flex-col">
-                    <span className="text-[10px] text-white/40 uppercase tracking-wider">Harga sebelumnya</span>
-                    <span className="text-lg text-white/20 line-through font-mono font-bold tracking-tight">Rp8,5 Miliar</span>
+                    <span className="text-[10px] text-white/50 uppercase tracking-wider font-bold">Harga sebelumnya</span>
+                    <span className="text-xl text-white/40 line-through font-mono font-black tracking-tight">Rp8,5 Miliar</span>
                   </div>
                   <span className="text-green-400 text-sm font-bold bg-green-500/20 px-3 py-1 rounded-full border border-green-500/30">✓ NEGO SAMPAI DEAL</span>
                 </div>
@@ -316,14 +328,14 @@ Mohon informasi lebih lanjut. Terima kasih.`;
                 </svg>
                 Hubungi via WhatsApp
               </a>
-               <button
-                 onClick={scrollToForm}
+               <a
+                 href="#lead-form"
                  className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border-2 border-white/20 hover:border-white/40 text-white font-bold text-sm px-7 py-4 rounded-xl backdrop-blur transition-all hover:scale-[1.05] active:scale-95 cursor-pointer shadow-lg hover:shadow-white/10"
                >
                  <Calendar className="w-4 h-4" />
                  <span>Jadwalkan Survey Gratis</span>
                  <ChevronDown className="w-4 h-4 ml-1" />
-               </button>
+               </a>
             </motion.div>
 
             {/* Trust Badges */}
@@ -341,17 +353,14 @@ Mohon informasi lebih lanjut. Terima kasih.`;
         </div>
 
         {/* Scroll cue */}
-        <button
-          onClick={() => {
-            const statsSection = document.querySelector('section:nth-of-type(2)');
-            statsSection?.scrollIntoView({ behavior: 'smooth' });
-          }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 hover:text-white/50 transition-colors cursor-pointer animate-bounce group"
+        <a
+          href="#lead-form"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 hover:text-white/50 transition-colors animate-bounce group"
           aria-label="Scroll ke bawah"
         >
           <span className="text-[10px] uppercase tracking-widest">Scroll</span>
-          <ChevronLeft className="w-4 h-4 -rotate-90 group-hover:scale-110 transition-transform" />
-        </button>
+          <ChevronDown className="w-5 h-5 group-hover:scale-110 transition-transform" />
+        </a>
       </section>
 
       {/* ─── STATS STRIP ─── */}
@@ -968,7 +977,7 @@ Mohon informasi lebih lanjut. Terima kasih.`;
               {/* Harga Awal */}
               <div className="flex flex-col items-center px-6 py-5 rounded-2xl bg-white/4 border-2 border-white/10 hover:border-white/20 transition-all duration-300">
                 <span className="text-white/50 text-[10px] font-extrabold uppercase tracking-[0.3em] mb-3">HARGA AWAL</span>
-                <span className="text-white/15 line-through text-4xl md:text-5xl font-mono font-black tracking-tight">Rp8,5 Miliar</span>
+                <span className="text-white/40 line-through text-4xl md:text-5xl font-mono font-black tracking-tight">Rp8,5 Miliar</span>
               </div>
 
               {/* Arrow */}
@@ -977,7 +986,7 @@ Mohon informasi lebih lanjut. Terima kasih.`;
               {/* Turun 1× */}
               <div className="flex flex-col items-center px-6 py-5 rounded-2xl bg-yellow-500/8 border-2 border-yellow-500/30 hover:border-yellow-500/50 hover:bg-yellow-500/12 transition-all duration-300">
                 <span className="text-yellow-400 text-[10px] font-extrabold uppercase tracking-[0.3em] mb-3">TURUN 1×</span>
-                <span className="text-yellow-300/35 line-through text-4xl md:text-5xl font-mono font-black tracking-tight">Rp7,5 Miliar</span>
+                <span className="text-yellow-300/60 line-through text-4xl md:text-5xl font-mono font-black tracking-tight">Rp7,5 Miliar</span>
               </div>
 
               {/* Arrow */}
@@ -1016,24 +1025,24 @@ Mohon informasi lebih lanjut. Terima kasih.`;
               </div>
             </motion.div>
 
-            <motion.div variants={fadeUp} className="flex flex-wrap justify-center gap-4">
-              <a
-                href={WA_DEFAULT}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2.5 bg-red-600 hover:bg-red-500 text-white font-bold text-sm px-8 py-4 rounded-xl shadow-lg shadow-red-600/30 transition-all hover:scale-[1.03] active:scale-95"
-              >
-                <Phone className="w-4 h-4" />
-                Hubungi Sekarang
-              </a>
-              <button
-                onClick={scrollToForm}
-                className="flex items-center gap-2 border border-white/20 text-white font-bold text-sm px-8 py-4 rounded-xl hover:bg-white/5 transition-all active:scale-95"
-              >
-                <Calendar className="w-4 h-4" />
-                Jadwalkan Survey
-              </button>
-            </motion.div>
+              <motion.div variants={fadeUp} className="flex flex-wrap justify-center gap-4">
+                <a
+                  href={WA_DEFAULT}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-red-600 hover:bg-red-500 text-white font-bold text-sm px-8 py-4 rounded-xl shadow-lg shadow-red-600/30 transition-all hover:scale-[1.03] active:scale-95"
+                >
+                  <Phone className="w-4 h-4" />
+                  Hubungi Sekarang
+                </a>
+                <a
+                  href="#lead-form"
+                  className="flex items-center gap-2 border-2 border-white/20 hover:border-white/40 text-white font-bold text-sm px-8 py-4 rounded-xl hover:bg-white/5 transition-all active:scale-95"
+                >
+                  <Calendar className="w-4 h-4" />
+                  Jadwalkan Survey
+                </a>
+              </motion.div>
 
             <motion.p
               variants={fadeUp}
@@ -1046,7 +1055,7 @@ Mohon informasi lebih lanjut. Terima kasih.`;
       </section>
 
       {/* ─── LEAD FORM ─── */}
-      <section ref={formRef} className="py-20 md:py-28 bg-[#0C0C0C] scroll-mt-24">
+      <section id="lead-form" ref={formRef} className="py-20 md:py-28 bg-[#0C0C0C] scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid lg:grid-cols-5 gap-12 items-start">
             {/* Left info */}
