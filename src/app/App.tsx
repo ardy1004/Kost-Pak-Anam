@@ -952,22 +952,31 @@ Mohon informasi lebih lanjut. Terima kasih.`;
             {/* Price history */}
             <motion.div
               variants={fadeUp}
-              className="flex flex-wrap items-center justify-center gap-4 mb-8 text-sm"
+              className="flex flex-wrap items-center justify-center gap-4 mb-8"
             >
-              <div className="flex flex-col items-center">
-                <span className="text-white/35 text-[10px] uppercase tracking-wider mb-1">Harga Awal</span>
-                <span className="line-through text-white/25 font-mono">Rp8,5 Miliar</span>
+              {/* Harga Awal */}
+              <div className="flex flex-col items-center px-4 py-3 rounded-xl bg-white/3 border border-white/8 hover:border-white/12 transition-colors">
+                <span className="text-white/40 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Harga Awal</span>
+                <span className="text-white/20 line-through text-2xl md:text-3xl font-mono font-bold">Rp8,5 Miliar</span>
               </div>
-              <ArrowRight className="w-3 h-3 text-white/30 self-center" />
-              <div className="flex flex-col items-center">
-                <span className="text-yellow-400 text-[10px] uppercase tracking-wider mb-1">Turun 1×</span>
-                <span className="line-through text-white/35 font-mono">Rp7,5 Miliar</span>
+
+              {/* Arrow */}
+              <ArrowRight className="w-5 h-5 text-white/20 hidden sm:block" />
+
+              {/* Turun 1× */}
+              <div className="flex flex-col items-center px-4 py-3 rounded-xl bg-yellow-500/5 border border-yellow-500/15 hover:border-yellow-500/25 transition-colors">
+                <span className="text-yellow-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Harga Turun 1×</span>
+                <span className="text-yellow-300/40 line-through text-2xl md:text-3xl font-mono font-bold">Rp7,5 Miliar</span>
               </div>
-              <ArrowRight className="w-3 h-3 text-white/30 self-center" />
-              <div className="flex flex-col items-center">
-                <span className="text-red-400 text-[10px] uppercase tracking-wider mb-1">Turun 3× <span className="text-red-300">HARGA SAAT INI</span></span>
-                <span className="text-red-400 font-black text-xl font-mono">Rp6,5 Miliar ✓</span>
-                <span className="text-red-300/70 text-[10px]">(NEGO SAMPAI DEAL)</span>
+
+              {/* Arrow */}
+              <ArrowRight className="w-5 h-5 text-white/20 hidden sm:block" />
+
+              {/* Harga Saat Ini */}
+              <div className="flex flex-col items-center px-6 py-4 rounded-xl bg-red-600/15 border-2 border-red-500/40 hover:border-red-500/60 transition-all shadow-lg shadow-red-500/20">
+                <span className="text-red-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Harga Akhir (DISKON 3×)</span>
+                <span className="text-red-400 text-3xl md:text-4xl font-mono font-black">Rp6,5 Miliar ✓</span>
+                <span className="text-red-300/80 text-xs font-bold mt-1 bg-red-500/20 px-2 py-0.5 rounded-full">NEGO SAMPAI DEAL</span>
               </div>
             </motion.div>
 
