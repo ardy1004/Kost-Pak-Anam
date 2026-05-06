@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import {
   MapPin, BedDouble, Building2, TrendingUp, CheckCircle, Phone,
   Calendar, DollarSign, Shield, X, ArrowRight,
-  ChevronLeft, ChevronRight, Zap, Clock, Key, Banknote,
+  ChevronLeft, ChevronRight, ChevronDown, Zap, Clock, Key, Banknote,
   Star, Coffee, Users, Home, Award, Maximize2, Video
 } from "lucide-react";
 import {
@@ -316,13 +316,14 @@ Mohon informasi lebih lanjut. Terima kasih.`;
                 </svg>
                 Hubungi via WhatsApp
               </a>
-              <button
-                onClick={scrollToForm}
-                className="flex items-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-sm px-7 py-4 rounded-xl backdrop-blur transition-all hover:scale-[1.03] active:scale-95"
-              >
-                <Calendar className="w-4 h-4" />
-                Jadwalkan Survey Gratis
-              </button>
+               <button
+                 onClick={scrollToForm}
+                 className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border-2 border-white/20 hover:border-white/40 text-white font-bold text-sm px-7 py-4 rounded-xl backdrop-blur transition-all hover:scale-[1.05] active:scale-95 cursor-pointer shadow-lg hover:shadow-white/10"
+               >
+                 <Calendar className="w-4 h-4" />
+                 <span>Jadwalkan Survey Gratis</span>
+                 <ChevronDown className="w-4 h-4 ml-1" />
+               </button>
             </motion.div>
 
             {/* Trust Badges */}
@@ -340,10 +341,17 @@ Mohon informasi lebih lanjut. Terima kasih.`;
         </div>
 
         {/* Scroll cue */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 animate-bounce">
+        <button
+          onClick={() => {
+            const statsSection = document.querySelector('section:nth-of-type(2)');
+            statsSection?.scrollIntoView({ behavior: 'smooth' });
+          }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 hover:text-white/50 transition-colors cursor-pointer animate-bounce group"
+          aria-label="Scroll ke bawah"
+        >
           <span className="text-[10px] uppercase tracking-widest">Scroll</span>
-          <ChevronLeft className="w-4 h-4 -rotate-90" />
-        </div>
+          <ChevronLeft className="w-4 h-4 -rotate-90 group-hover:scale-110 transition-transform" />
+        </button>
       </section>
 
       {/* ─── STATS STRIP ─── */}
