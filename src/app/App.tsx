@@ -207,7 +207,7 @@ Mohon informasi lebih lanjut. Terima kasih.`;
           </div>
           <div className="flex items-center gap-3">
             <span className="text-white/50 text-xs hidden md:block">
-              Kost 16 Kamar · Rp6,5M · Ambarukmo Yogyakarta
+              Kost 16 Kamar · Rp6,5 Miliar · Ambarukmo Yogyakarta
             </span>
             <a
               href={WA_DEFAULT}
