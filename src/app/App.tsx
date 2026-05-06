@@ -279,23 +279,26 @@ Mohon informasi lebih lanjut. Terima kasih.`;
             {/* Price */}
             <motion.div
               variants={fadeUp}
-              className="flex flex-wrap items-center gap-3 mb-8"
+              className="flex flex-wrap items-center gap-4 mb-8"
             >
-              <div className="bg-black/60 backdrop-blur border border-accent/30 rounded-2xl px-6 py-3">
-                <p className="text-xs text-white/40 uppercase tracking-widest font-semibold mb-0.5">Harga Investasi</p>
+              <div className="bg-black/70 backdrop-blur-lg border-2 border-accent/50 rounded-2xl px-8 py-5 shadow-xl shadow-accent/20 hover:shadow-accent/40 transition-all duration-300">
+                <p className="text-xs text-white/50 uppercase tracking-[0.2em] font-bold mb-2">Harga Investasi</p>
                 <p
-                  className="text-3xl md:text-4xl font-black text-accent"
+                  className="text-4xl md:text-5xl font-black text-accent tracking-tight"
                   style={{ fontFamily: "'DM Mono', monospace" }}
                 >
                   Rp6,5 Miliar
                 </p>
-                <p className="text-xs text-white/40 mt-0.5">
-                  <s className="text-white/25">Rp8,5 Miliar</s>
-                  <span className="text-green-400 ml-2 font-bold">NEGO SAMPAI DEAL</span>
-                </p>
+                <div className="flex items-center gap-3 mt-2">
+                  <div className="flex flex-col">
+                    <span className="text-[10px] text-white/40 uppercase tracking-wider">Harga sebelumnya</span>
+                    <span className="text-lg text-white/20 line-through font-mono font-bold tracking-tight">Rp8,5 Miliar</span>
+                  </div>
+                  <span className="text-green-400 text-sm font-bold bg-green-500/20 px-3 py-1 rounded-full border border-green-500/30">✓ NEGO SAMPAI DEAL</span>
+                </div>
               </div>
-              <div className="text-sm text-white/50 max-w-[200px] leading-relaxed">
-                Sudah diturunkan 3× oleh owner.<br />
+              <div className="text-sm text-white/60 max-w-[200px] leading-relaxed pt-2">
+                Sudah diturunkan <strong className="text-red-400 text-white">3×</strong> oleh owner.<br />
                 <span className="text-red-400 font-semibold">Kesempatan langka — terbatas!</span>
               </div>
             </motion.div>
@@ -952,31 +955,31 @@ Mohon informasi lebih lanjut. Terima kasih.`;
             {/* Price history */}
             <motion.div
               variants={fadeUp}
-              className="flex flex-wrap items-center justify-center gap-4 mb-8"
+              className="flex flex-wrap items-center justify-center gap-4 mb-10"
             >
               {/* Harga Awal */}
-              <div className="flex flex-col items-center px-4 py-3 rounded-xl bg-white/3 border border-white/8 hover:border-white/12 transition-colors">
-                <span className="text-white/40 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Harga Awal</span>
-                <span className="text-white/20 line-through text-2xl md:text-3xl font-mono font-bold">Rp8,5 Miliar</span>
+              <div className="flex flex-col items-center px-6 py-5 rounded-2xl bg-white/4 border-2 border-white/10 hover:border-white/20 transition-all duration-300">
+                <span className="text-white/50 text-[10px] font-extrabold uppercase tracking-[0.3em] mb-3">HARGA AWAL</span>
+                <span className="text-white/15 line-through text-4xl md:text-5xl font-mono font-black tracking-tight">Rp8,5 Miliar</span>
               </div>
 
               {/* Arrow */}
-              <ArrowRight className="w-5 h-5 text-white/20 hidden sm:block" />
+              <ArrowRight className="w-6 h-6 text-white/10 hidden md:block" />
 
               {/* Turun 1× */}
-              <div className="flex flex-col items-center px-4 py-3 rounded-xl bg-yellow-500/5 border border-yellow-500/15 hover:border-yellow-500/25 transition-colors">
-                <span className="text-yellow-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Harga Turun 1×</span>
-                <span className="text-yellow-300/40 line-through text-2xl md:text-3xl font-mono font-bold">Rp7,5 Miliar</span>
+              <div className="flex flex-col items-center px-6 py-5 rounded-2xl bg-yellow-500/8 border-2 border-yellow-500/30 hover:border-yellow-500/50 hover:bg-yellow-500/12 transition-all duration-300">
+                <span className="text-yellow-400 text-[10px] font-extrabold uppercase tracking-[0.3em] mb-3">TURUN 1×</span>
+                <span className="text-yellow-300/35 line-through text-4xl md:text-5xl font-mono font-black tracking-tight">Rp7,5 Miliar</span>
               </div>
 
               {/* Arrow */}
-              <ArrowRight className="w-5 h-5 text-white/20 hidden sm:block" />
+              <ArrowRight className="w-6 h-6 text-white/10 hidden md:block" />
 
               {/* Harga Saat Ini */}
-              <div className="flex flex-col items-center px-6 py-4 rounded-xl bg-red-600/15 border-2 border-red-500/40 hover:border-red-500/60 transition-all shadow-lg shadow-red-500/20">
-                <span className="text-red-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-2">Harga Akhir (DISKON 3×)</span>
-                <span className="text-red-400 text-3xl md:text-4xl font-mono font-black">Rp6,5 Miliar ✓</span>
-                <span className="text-red-300/80 text-xs font-bold mt-1 bg-red-500/20 px-2 py-0.5 rounded-full">NEGO SAMPAI DEAL</span>
+              <div className="flex flex-col items-center px-8 py-6 rounded-2xl bg-gradient-to-b from-red-600/20 to-red-900/20 border-2 border-red-500 hover:border-red-400 shadow-2xl shadow-red-500/40 hover:shadow-red-400/60 transition-all duration-300 transform hover:scale-105">
+                <span className="text-red-400 text-[10px] font-extrabold uppercase tracking-[0.3em] mb-3">HARGA AKHIR — DISKON 3×</span>
+                <span className="text-red-400 text-5xl md:text-6xl font-mono font-black tracking-tight">Rp6,5 Miliar</span>
+                <span className="text-red-300 font-bold text-sm mt-2 bg-red-500/30 px-4 py-1.5 rounded-full border border-red-500/50">✓ NEGO SAMPAI DEAL</span>
               </div>
             </motion.div>
 
